@@ -35,4 +35,5 @@ let percentage = 5 / 100;
 for (i = 1; i <= experience; i++) {
   basicsalary = basicsalary + basicsalary * percentage;
 }
+basicsalary = basicsalary.toFixed(2);
 console.log(basicsalary);
