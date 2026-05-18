@@ -26,6 +26,24 @@ for (i = 1; i <= lastDay; i++) {
   }
 }
 
+/** Problem 04 - (Delete / Store) */
+var fileName = "docx.xpdf";
+if (
+  fileName.includes(".jpg") ||
+  fileName.includes(".docx") ||
+  fileName.includes("#")
+) {
+  console.log("store");
+} else {
+  console.log("delet");
+}
+
+/** Problem 05 - ( PH Email Generator )  */
+var student = { name: "jhankar", roll: 1014, department: "cse" };
+let domain = "@ph.ac.bd";
+const email = student.name + student.roll + student.department + domain;
+// console.log(email);
+
 /** Problem 06 :  (Current Salary )  */
 let basicsalary;
 var experience = 30;
@@ -36,4 +54,4 @@ for (i = 1; i <= experience; i++) {
   basicsalary = basicsalary + basicsalary * percentage;
 }
 basicsalary = basicsalary.toFixed(2);
-console.log(basicsalary);
+// console.log(basicsalary);
